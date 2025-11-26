@@ -57,3 +57,12 @@ Crie credenciais "IntraPay API" com:
 ## Suporte
 
 - Para dúvidas de integração, verifique as páginas da doc da Intra Pay.
+
+## Links oficiais
+
+- Site: https://intrapay.io
+- Documentação: https://docs.intrapay.io
+- GitHub do projeto: https://github.com/Intra-Pay/sdk-n8n-intra-pay
+- GitHub (Intra Pay): https://github.com/Intra-Pay
+- Discord: https://discord.gg/intrapay
+- Instagram: @intrapay.io (https://instagram.com/intrapay.io)
