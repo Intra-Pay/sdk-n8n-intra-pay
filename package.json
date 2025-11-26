@@ -1,0 +1,45 @@
+{
+  "name": "n8n-nodes-intrapay",
+  "version": "1.0.12",
+  "icon": "file:logo-intra-pay.svg",
+  "description": "Community Node do n8n para integrar com a Intra Pay usando intrapay-sdk",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "intrapay",
+    "pix",
+    "payments"
+  ],
+  "files": ["dist", "README.md"],
+  "publishConfig": { "access": "public" },
+  "n8n": {
+    "credentials": [
+      "dist/credentials/IntraPayApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/IntraPay/IntraPay.node.js"
+    ]
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run clean && npm run build && copyfiles -u 3 \"src/nodes/IntraPay/*.svg\" dist/nodes/IntraPay"
+  },
+  "dependencies": {
+    "intrapay-sdk": "^0.1.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.121.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "n8n-workflow": "^1.0.0",
+    "eslint": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.5"
+  }
+}
