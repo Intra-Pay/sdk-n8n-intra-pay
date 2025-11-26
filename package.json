@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-intrapay",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "icon": "file:logo-intra-pay.svg",
   "description": "Community Node do n8n para integrar com a Intra Pay usando intrapay-sdk",
   "main": "dist/index.js",
